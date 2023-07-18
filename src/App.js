@@ -1,20 +1,18 @@
-import {BrowserRouter, Route} from 'react-router-dom'
+import {Route} from 'react-router-dom'
+
+import Layout from "../src/Layout/Layout"
 
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage';
-import Navigation from './components/Navigation';
-
-import './App.css';
+import Profile from './pages/Profile';
 
 function App() {
   return (
-    // <div className="App">
-      <BrowserRouter>
-        <Navigation/>
+    <Layout>
         <Route path="/" exact={true} component={HomePage} />
         <Route path="/about-us" component={AboutUsPage} />
-      </BrowserRouter>
-    // </div>
+        <Route path="/profile" component={Profile}/>
+    </Layout>
   );
 }
 
