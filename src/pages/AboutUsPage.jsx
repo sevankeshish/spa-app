@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom";
+
 const AboutUsPage = () => {
     return ( 
         <section>
             <p>this is AboutUsPage.</p>
-            <a href="/">
+            {/* <Link to="/">
+             go to home page
+            </Link> */}
+            {/* <a href="/">
                 go to home page
-            </a>
+            </a> */}
         </section>
      );
 }
