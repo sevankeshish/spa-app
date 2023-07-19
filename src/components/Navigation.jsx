@@ -5,7 +5,8 @@ const items = [
     {name: "Home", to:"/", exact:true},
     {name: "About-us", to:"/about-us"},
     {name: "Profile", to:"/profile"},
-    {name:"Blogs", to:"/blogs"}
+    {name:"Blogs", to:"/blogs"},
+    {name:"Post", to:"/post"}
 ]
 
 const Navigation = () => {

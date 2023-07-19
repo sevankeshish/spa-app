@@ -8,7 +8,8 @@ const Blogs = (props) => {
     return ( 
         <div>
             <h3>Blog details - {id}</h3>
-            <Link to="/blogs">go to the blogs page</Link>
+            {/* <Link to="/blogs">go to the blogs page</Link> */}
+            <Link to={`/blogs/${parseInt(id) + 1}`}>go to the next blogs page</Link>
         </div>
      );
 }
