@@ -6,10 +6,12 @@ import Downloads from "../components/Downloads";
 const Profile = () => {
     return (  
         <>
-            <p>wellcome back !</p>
-            <SideBar/>
-            <Route path="/profile/dashboard" component={Dashboard} />
-            <Route path="/profile/downloads" component={Downloads} />
+            <h2 style={{margin: "20px"}}>wellcome back !</h2>
+            <div>
+                <SideBar/>
+                <Route path="/profile/dashboard" component={Dashboard} />
+                <Route path="/profile/downloads" component={Downloads} />
+            </div>
         </>
     );
 }
