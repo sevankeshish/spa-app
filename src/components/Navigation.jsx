@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom"
 const items = [
     {name: "Home", to:"/", exact:true},
     {name: "About-us", to:"/about-us"},
-    {name: "Profile", to:"/profile"}
+    {name: "Profile", to:"/profile"},
+    {name:"Blogs", to:"/blogs"}
 ]
 
 const Navigation = () => {
