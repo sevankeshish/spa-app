@@ -12,7 +12,7 @@ const routes = [
     {path:"/blogs", component: BlogPage},
     {path:"/profile", component: Profile},
     {path:"/about-us", component: AboutUsPage},
-    {path:"/post/:id?([0-9]+)",component:PostPage},
+    {path:"/post/:id([0-9]+)?",component:PostPage},
     // {path:"/post/:id?([a-z]+)",component:PostPage},
     {component:NotFound},
     {path:"/", component: HomePage, exact:true},

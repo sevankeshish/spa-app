@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import queryString from "query-string";
 
-const Blogs = (props) => {
+const Blogs = ({location, match}) => {
     // console.log(props.match.params);
+    
     //we click and get the id, when we get the PARAMS we much do a hhtp request to backend
     // => axios.get("/blogs/1")
-    const id = props.match.params.id
+    const query = queryString.parse(location.search)
+    console.log(query);
+    const id = match.params.id
     return ( 
         <div>
             <h3>Blog details - {id}</h3>
